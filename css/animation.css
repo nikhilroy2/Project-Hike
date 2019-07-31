@@ -1,0 +1,43 @@
+/*.............................Animation...............................*/
+/*..........................carousel_item .carousel_item_txt1>h1............*/
+@-webkit-keyframes carousel_item_txt1_h1_span{
+    0%{
+        -webkit-transform: rotate(-22deg) translate(-20px, -10px);
+                transform: rotate(-22deg) translate(-20px, -10px);
+        opacity: 0;
+    }
+    100%{
+        -webkit-transform: rotate(0deg) translate(0px,0px);
+                transform: rotate(0deg) translate(0px,0px);
+        opacity: 1;
+    }
+}
+@keyframes carousel_item_txt1_h1_span{
+    0%{
+        -webkit-transform: rotate(-22deg) translate(-20px, -10px);
+                transform: rotate(-22deg) translate(-20px, -10px);
+        opacity: 0;
+    }
+    100%{
+        -webkit-transform: rotate(0deg) translate(0px,0px);
+                transform: rotate(0deg) translate(0px,0px);
+        opacity: 1;
+    }
+}
+/*...........................Testimonial=inner_test_box Animation..............*/
+@-webkit-keyframes inner_test_box{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes inner_test_box{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}

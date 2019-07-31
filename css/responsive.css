@@ -1,0 +1,191 @@
+/*.....................................Responsive Style............................*/
+/*
+.
+.
+.*/
+/*....................................Header Responsive.......................*/
+@media screen and (max-width: 768px){
+    .header_inner_right>.purchase,
+    .header_inner_right>.call_us{
+        display: none;
+    }
+    .header_inner_right>label{
+        display: inline-block;
+        cursor: pointer;
+    }
+    .header_inner_right>label>i{
+        font-size: 25px;
+    }
+    .header_inner_right .right_item{
+        padding: 0px 13px;
+        vertical-align: super;
+    }
+    .header_inner_upper .header_inner_right{
+        padding-right: 15px;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 992px){
+    nav{
+        width: 700px;
+    }
+}
+@media screen and (max-width: 600px){
+    .header_inner_upper .site_icon>a{
+        padding: 15px;
+    }
+    .carousel_item .carousel_item_txt1>h1{
+        font-size: 40px;
+    }
+    .carousel_item .carousel_item_txt1>h2{
+        font-size: 25px;
+    }
+    .carousel_item .carousel_item_txt1>h3{
+        font-size: 18px;
+    }
+}
+/*..............................Navbar Dropdown Responsive.....................*/
+@media screen and (min-width: 768px) and (max-width: 992px){
+    .nav_item_hike .hike_dropdown_menu,
+    .nav_volare .volare_dropdown_menu{
+        width: 650px;
+    }
+}
+@media screen and (max-width: 768px){
+    nav{
+        position: absolute;
+        width: 100%;
+        min-height: 0px;
+        -webkit-transform: scaleY(0);
+            -ms-transform: scaleY(0);
+                transform: scaleY(0);
+        -webkit-transform-origin: top;
+            -ms-transform-origin: top;
+                transform-origin: top;
+        -webkit-transition: 1s all;
+        -o-transition: 1s all;
+        transition: 1s all;
+        opacity: 0;
+        z-index: 10000000;
+    }
+    header input#header_bar:checked ~ nav{
+        min-height: 200px;
+        -webkit-transform: scaleY(1);
+            -ms-transform: scaleY(1);
+                transform: scaleY(1);
+        opacity: 1;
+    }
+    nav  .nav_item{
+        display: block;
+    }
+    .nav_item [class*="dropdown_menu"]{
+        height: 0px;
+    }
+    .nav_menu [for="nav_menu_check"]{
+        display: none!important;
+    }
+    nav .nav_item .nav_link{
+        display: block;
+    }
+    nav .nav_item .nav_link:not(.pseudo_hide)::after{
+        right: 10px;
+    }
+    /*.......................Dropdown Navbar..................*/
+
+    .nav_item_hike [for="hike_check"],
+    .nav_pages [for="pages_check"],
+    .nav_volare [for="volare_check"]{
+        display: block;
+        cursor: pointer;
+        pointer-events: visible;
+    }
+    .nav_item_hike .hike_dropdown_menu,
+    .nav_pages .pages_dropdown_menu,
+    .nav_volare .volare_dropdown_menu{
+        display: none;
+        position: static;
+        width: 100%;
+    }
+    .nav_item_hike #hike_check:checked ~ .hike_dropdown_menu,
+    .nav_pages #pages_check:checked ~ .pages_dropdown_menu,
+    .nav_volare #volare_check:checked ~ .volare_dropdown_menu{
+        height: auto;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-flow: column;
+                flex-flow: column;
+        margin-left: 15px;
+        opacity: 1;
+        visibility: visible;
+    }
+    .nav_volare #volare_check:checked ~ .volare_dropdown_menu{
+        margin-left: 0px;
+    }
+    .hike_dropdown_menu .drop_img{
+        height: 250px;
+    }
+    .hike_dropdown_menu .drop_img img{
+        width: 100%!important;
+        height: 100%!important;   
+        -o-object-fit: cover;   
+           object-fit: cover;     
+    }
+    .volare_dropdown_item .img_box{
+        height: 250px;
+    }
+}
+/*.................................Section Popular Card Responsive..............*/
+@media screen and (max-width: 700px){
+    .popular_card .popular_card_item{
+        -ms-flex-preferred-size: 500px;
+            flex-basis: 500px;
+    }
+}
+/*.................................Section Volar...............................*/
+@media screen and (max-width: 900px){
+    .sec_volare .sec_volare_item{
+        float: none;
+        margin: 0px auto;
+        width: 100%;
+    }
+}
+/*..................................Section Plus Map Responsive..................*/
+@media screen and (max-width: 900px){
+    .plus_map{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+    .plus_map .map_item{
+        width: 90%;
+        margin: 10px auto;
+    }
+    .plus_map_item .map_satelite{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 500px){
+    .plus_map_item [class*="item_txt_box"]{
+        margin: 20px;
+        padding: 10px;
+    }
+}
+/*.............................Section Testimonial Responsive.....................*/
+@media screen and (max-width: 700px){
+    .testimonial .testimonial_item{
+        float: inherit;
+        width: 95%;
+        margin: 0px auto;
+        padding: 30px 10px;
+    }
+}
+/*.............................Footer Responsive...........................*/
+@media screen and (max-width: 600px){
+    footer .footer_upper_wrapper{
+        padding: 0px 10px;
+        margin: 0px;
+    }
+}
